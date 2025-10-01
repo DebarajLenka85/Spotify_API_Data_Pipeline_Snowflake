@@ -33,8 +33,8 @@ Create or replace storage integration AWS_S3_INTEGRATION
 Type = external_stage  
 storage_provider = S3  
 enabled = true
-storage_aws_role_arn = 'arn:aws:iam::721559935858:role/S3_AUTH_ROLE'
-storage_allowed_locations = ('s3://spotify-api-bucket85/transformed_data/')
+storage_aws_role_arn = 'arn:aws:iam::1111111111:role/S3_AUTH_ROLE_AWW'
+storage_allowed_locations = ('s3://spot-bucket85/transformed_data/')
 comment = 'Name        : AWS_S3_INTEGRATION
            Created By  : Debaraj Lenka
            Created Date: 01-10-2025';
@@ -75,8 +75,8 @@ TYPE = QUEUE
 ENABLED = TRUE
 DIRECTION = OUTBOUND
 NOTIFICATION_PROVIDER = 'AWS_SNS'
-AWS_SNS_ROLE_ARN = 'arn:aws:iam::721559935858:role/S3_AUTH_ROLE'
-AWS_SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:721559935858:spotify_notification';
+AWS_SNS_ROLE_ARN = 'arn:aws:iam::11111111111:role/S3_AUTH_ROLE_AWW'
+AWS_SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:11111111111:spotify_notification';
 
 
 
